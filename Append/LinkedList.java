@@ -1,4 +1,4 @@
-public class Append {
+public class LinkedList {
     
     private Node head;
     private Node tail;
@@ -14,7 +14,7 @@ public class Append {
     }
 
 
-    public Append(int value)
+    public LinkedList(int value)
     {
         Node newnode= new Node(value);
         head=newnode;
