@@ -59,5 +59,28 @@ public class Append {
             printList();
         }
     }
+    public void makeEmpty() {
+        head = null;
+        tail = null;
+        length = 0;
+    }
+
+	public void appends(int value)
+	{
+	   Node newNode= new Node(value);
+	   
+	   if(length == 0)
+	   {
+	       head = newNode;
+	       tail = newNode;
+	       length = 1;
+	   }
+	   else
+	   {
+	       tail.next = newNode;
+	       tail = newNode;
+	       length++;
+	   }
+	}
 
 }
